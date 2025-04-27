@@ -1,10 +1,6 @@
 
 package Clases;
 
-/**
- *
- * @author L34215
- */
 public abstract class ServicioLimpieza {
     protected String direccionCliente;
     protected double duracionHoras;
@@ -19,6 +15,8 @@ public abstract class ServicioLimpieza {
         this.incluyeMateriales = incluyeMateriales;
         this.nombreCliente = nombreCliente;
     }
+    
+    public abstract String getDescripcion();
     
     public double calcularPrecioBase() {
         return duracionHoras * tarifaHora;

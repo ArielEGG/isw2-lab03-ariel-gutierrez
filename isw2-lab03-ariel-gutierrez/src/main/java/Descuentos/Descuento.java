@@ -1,11 +1,7 @@
 
 
-package Clases;
+package Descuentos;
 
-/**
- *
- * @author L34215
- */
 public interface Descuento {
     double aplicarDescuento(double monto);
 }

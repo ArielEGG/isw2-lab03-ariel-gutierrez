@@ -12,7 +12,10 @@ public class ServicioIndustrial extends ServicioLimpieza {
         super(direccionCliente, duracionHoras, tarifaHora, incluyeMateriales, nombreCliente);
         this.multiplicadorRiesgo = multiplicadorRiesgo;
     }
-
+    @Override
+    public String getDescripcion(){
+        return "Servicio de Limpieza Insdustrial";
+    }
     @Override
     public double calcularPrecioFinal() {
         if(!incluyeMateriales){

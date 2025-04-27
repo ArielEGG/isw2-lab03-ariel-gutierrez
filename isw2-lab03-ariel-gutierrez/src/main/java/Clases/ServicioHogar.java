@@ -11,7 +11,10 @@ public class ServicioHogar extends ServicioLimpieza{
         super(direccionCliente, duracionHoras, tarifaHora, incluyeMateriales, nombreCliente);
         this.esApartamento = esApartamento;
     }
-
+    @Override
+    public String getDescripcion(){
+        return "Servicio de Limpieza para Hogar";
+    }
     @Override
     public double calcularPrecioFinal() {
         double precioB = calcularPrecioBase();

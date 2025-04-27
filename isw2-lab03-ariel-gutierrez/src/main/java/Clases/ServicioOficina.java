@@ -13,6 +13,10 @@ public class ServicioOficina extends ServicioLimpieza{
         this.cantidadEmpleados = cantidadEmpleados;
     }
     @Override
+    public String getDescripcion(){
+        return "Servicio de Limpieza para Oficina";
+    }
+    @Override
     public double calcularPrecioFinal() {
         double HoraT = duracionHoras + (0.1 * cantidadEmpleados);
         double precioT = HoraT * tarifaHora;

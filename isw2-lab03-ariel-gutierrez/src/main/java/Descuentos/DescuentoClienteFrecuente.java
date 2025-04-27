@@ -1,10 +1,6 @@
 
-package Clases;
+package Descuentos;
 
-/**
- *
- * @author L34215
- */
 public class DescuentoClienteFrecuente implements Descuento {
     private static final double PORCENTAJE_DESCUENTO = 0.15;
     @Override
